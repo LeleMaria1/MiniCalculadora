@@ -5,4 +5,7 @@
     <string name="tipLabelTextView" />
     <string name="totalLabelTextView" />
     <string name="enter_amount">Insira um valor</string>
+    <string name="tip_percentage">15%</string>
+    <string name="Tip">Taxa</string>
+    <string name="total">Total</string>
 </resources>

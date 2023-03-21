@@ -7,7 +7,6 @@
     android:columnCount="2"
     tools:context=".MainActivity">
 
-
     <EditText
         android:id="@+id/amountEditText"
         android:layout_width="wrap_content"
@@ -19,11 +18,20 @@
         android:inputType="number" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/amountTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_row="0"
-        android:layout_column="1"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/percentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
         android:text="TextView" />
 
     <SeekBar
@@ -34,26 +42,10 @@
         android:layout_column="1" />
 
     <TextView
-        android:id="@+id/percentTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_row="1"
-        android:layout_column="0"
-        android:text="TextView" />
-
-    <TextView
         android:id="@+id/tipLabelTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_row="2"
-        android:layout_column="0"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/totalLabelTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_row="3"
         android:layout_column="0"
         android:text="TextView" />
 
@@ -66,10 +58,18 @@
         android:text="TextView" />
 
     <TextView
+        android:id="@+id/totalLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:text="TextView" />
+
+    <TextView
         android:id="@+id/totalTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_row="3"
         android:layout_column="1"
         android:text="TextView" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</GridLayout>

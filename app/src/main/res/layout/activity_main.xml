@@ -15,7 +15,8 @@
         android:layout_column="0"
         android:layout_columnSpan="2"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="@string/amountEditText"
+        tools:text="@string/enter_amount" />
 
     <TextView
         android:id="@+id/amountTextView"
@@ -32,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_row="1"
         android:layout_column="0"
-        android:text="TextView" />
+        android:text="@string/percentTextView" />
 
     <SeekBar
         android:id="@+id/percentSeekBar"
@@ -47,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_row="2"
         android:layout_column="0"
-        android:text="TextView" />
+        android:text="@string/tipLabelTextView" />
 
     <TextView
         android:id="@+id/tipTextView"
@@ -63,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_row="3"
         android:layout_column="0"
-        android:text="TextView" />
+        android:text="@string/totalLabelTextView" />
 
     <TextView
         android:id="@+id/totalTextView"

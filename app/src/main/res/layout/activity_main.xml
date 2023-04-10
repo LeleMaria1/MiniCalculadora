@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgroundpink"
     android:columnCount="2"
     android:useDefaultMargins="true"
     tools:context=".MainActivity">
@@ -18,7 +19,8 @@
         android:digits="0123456789"
         android:ems="10"
         android:inputType="number"
-        android:maxLength="6" />
+        android:maxLength="6"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/amountTextView"
@@ -28,10 +30,15 @@
         android:layout_column="0"
         android:layout_columnSpan="2"
         android:layout_gravity="fill_horizontal"
-        android:background="#BBDEFB"
+        android:background="@color/background1"
         android:elevation="@dimen/textview_elevation"
+        android:fontFamily="@font/baloo_tammudu"
         android:padding="@dimen/textview_padding"
-        android:text="TextView" />
+        android:text="@string/enter_amount"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/background4"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/percentTextView"
@@ -39,9 +46,13 @@
         android:layout_height="wrap_content"
         android:layout_row="1"
         android:layout_column="0"
-        android:layout_gravity="center_vertical"
+        android:layout_gravity="right|center_vertical"
+        android:fontFamily="@font/baloo_tammudu"
         android:gravity="center_vertical"
-        android:text="@string/tip_percentage" />
+        android:text="@string/tip_percentage"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <SeekBar
         android:id="@+id/percentSeekBar"
@@ -51,7 +62,8 @@
         android:layout_column="1"
         android:layout_gravity="fill_horizontal"
         android:max="30"
-        android:progress="15" />
+        android:progress="15"
+        android:progressTint="@color/background3" />
 
     <TextView
         android:id="@+id/tipLabelTextView"
@@ -60,7 +72,11 @@
         android:layout_row="2"
         android:layout_column="0"
         android:layout_gravity="end"
-        android:text="@string/Tip" />
+        android:fontFamily="@font/baloo_tammudu"
+        android:text="@string/Tip"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tipTextView"
@@ -69,11 +85,13 @@
         android:layout_row="2"
         android:layout_column="1"
         android:layout_gravity="fill_horizontal"
-        android:background="#FFE0B2"
+        android:background="@color/background3"
         android:elevation="@dimen/textview_elevation"
+        android:fontFamily="@font/baloo_tammudu"
         android:gravity="center"
         android:padding="@dimen/textview_padding"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/totalLabelTextView"
@@ -82,7 +100,10 @@
         android:layout_row="3"
         android:layout_column="0"
         android:layout_gravity="end"
-        android:text="@string/total" />
+        android:fontFamily="@font/baloo_tammudu"
+        android:text="@string/total"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/totalTextView"
@@ -91,9 +112,11 @@
         android:layout_row="3"
         android:layout_column="1"
         android:layout_gravity="fill_horizontal"
-        android:background="#FFE0B2"
+        android:background="@color/background3"
         android:elevation="@dimen/textview_elevation"
+        android:fontFamily="@font/baloo_tammudu"
         android:gravity="center"
         android:padding="@dimen/textview_padding"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textSize="16sp" />
 </GridLayout>

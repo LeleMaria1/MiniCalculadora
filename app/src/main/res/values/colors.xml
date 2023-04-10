@@ -10,4 +10,9 @@
     <color name="colorPrimary">#2196F3</color>
     <color name="colorPrimaryVariant">#1976D2</color>
     <color name="colorSecondary"> #FF9100</color>
+    <color name="background1">#ffb6c1</color>
+    <color name="background2">#088629</color>
+    <color name="background3">#a9fabe</color>
+    <color name="background4">#b1084a</color>
+
 </resources>
